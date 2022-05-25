@@ -30,6 +30,11 @@ The API should then be able to accept `POST` and `GET` JSON requests of the foll
 POST /goal:
 
 {
+  "goalId": "1234567890",
+  "targetAmount": 100.00
+}
+
+{
   "goalType": "WEDDING",
   "targetAmount": 100.00
 }
@@ -52,6 +57,6 @@ Please test the code you write in the `tests` directory.
 
 * The API should accept camel case JSON bodies, which should be transformed to snake case serverside.
 * `POST` requests to the `/user` route should create and persist a particular user. For this exercise, assume that this route cannot be used to update user information.
-* `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated.
+* `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated. Note that the list of possible requests above is not exhaustive. Think about all the different types of requests that we would like to `POST` to the `/goal` route.
 * `GET` requests sent to the `/goal` route should retrieve all the fields for a particular goal, which should be surfaced the the response. 
 * The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`. 
