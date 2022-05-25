@@ -60,3 +60,8 @@ Please test the code you write in the `tests` directory.
 * `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated. Note that the list of possible requests above is not exhaustive. Think about all the different types of requests that we would like to `POST` to the `/goal` route.
 * `GET` requests sent to the `/goal` route should retrieve all the fields for a particular goal, which should be surfaced the the response. 
 * The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`. 
+
+
+Please use any additional libraries you may need. Please update the README with details on how to install, run and test your code. Feel free to use a package manager like poetry or specify dependencies in a standard global `requirements.txt` file.
+
+Good luck!
