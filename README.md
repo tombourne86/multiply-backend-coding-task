@@ -34,7 +34,7 @@ POST /goal:
   "targetAmount": 100.00
 }
 
-GET /goal
+GET /goal:
 {
   "goalId": "1234567890"
 }
@@ -50,6 +50,6 @@ Please test the code you write in the `tests` directory.
 
 ## API spec
 
-* The API should accept camelcase JSON bodies, which should be transformed to snake case serverside. 
+* The API should accept camel case JSON bodies, which should be transformed to snake case serverside.
 * `POST` requests sent to the `/goal` route should update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created.
 * The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`
