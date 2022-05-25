@@ -3,7 +3,7 @@ Multiply Coding Task
 
 ## Problem overview
 
-At Multiply, we help people achieve their financial goals. In order to do this, we need ways to collect relevant information about people's goals. Under `api/models.py`, you will find a structure for kind of information about people's goals which we want to collect.
+At Multiply, we help people achieve their financial goals. In order to do this, we need ways to collect relevant information about people's goals. Under `api/models.py`, you will find a structure for kind of information about people's goals which we want to collect alongside a simple structure to collect basic user information.
 
 ## Task
 
@@ -51,5 +51,7 @@ Please test the code you write in the `tests` directory.
 ## API spec
 
 * The API should accept camel case JSON bodies, which should be transformed to snake case serverside.
-* `POST` requests sent to the `/goal` route should update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created.
-* The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`
+* `POST` requests to the `/user` route should create and persist a particular user. For this exercise, assume that this route cannot be used to update user information.
+* `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated.
+* `GET` requests sent to the `/goal` route should retrieve all the fields for a particular goal, which should be surfaced the the response. 
+* The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`. 
