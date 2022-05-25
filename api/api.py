@@ -1,0 +1,2 @@
+USER_STORE = {}
+GOAL_STORE = {}
