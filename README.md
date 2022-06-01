@@ -1,5 +1,4 @@
-Multiply Coding Task
-====================
+# Multiply Coding Task
 
 ## Problem overview
 
@@ -48,20 +47,16 @@ GET /goal:
 
 These goals should be stored in the `GOAL_STORE` dictionary.
 
-Write the API using Flask or any other Python REST framework (Django/FastAPI/etc.) if you are more comfortable with that.
-
-Please test the code you write in the `tests` directory.
-
+We have provided you with a basic set up, which uses [Poetry](https://python-poetry.org/) to manage dependencies, and which uses [Flask](https://flask.palletsprojects.com/) to run the web server and [pytest](https://docs.pytest.org/) to run any tests. We suggest you build off this base. You can run the server in development mode using `poetry run start` and you can run all the tests using `poetry run pytest .`.
 
 ## API spec
 
-* The API should accept camel case JSON bodies, which should be transformed to snake case serverside.
-* `POST` requests to the `/user` route should create and persist a particular user. For this exercise, assume that this route cannot be used to update user information.
-* `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated. Note that the list of possible requests above is not exhaustive. Think about all the different types of requests that we would like to `POST` to the `/goal` route.
-* `GET` requests sent to the `/goal` route should return all the fields for a particular goal. 
-* The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`. 
+- The API should accept camel case JSON bodies, which should be transformed to snake case serverside.
+- `POST` requests to the `/user` route should create and persist a particular user. For this exercise, assume that this route cannot be used to update user information.
+- `POST` requests sent to the `/goal` route should create and persist or update one or more fields. We would also like the response to indicate the `goal_id` for the Goal you have created/updated. Note that the list of possible requests above is not exhaustive. Think about all the different types of requests that we would like to `POST` to the `/goal` route.
+- `GET` requests sent to the `/goal` route should return all the fields for a particular goal.
+- The possible goal types your API should be prepared to handle are `WEDDING`, `HOMEBUYING`, `NEW_CAR` and `CUSTOM`.
 
-
-Feel free to use any additional libraries you may need. README should contain details on how to install, run and test your code. You can use a package manager like poetry or specify dependencies in a standard global `requirements.txt` file.
+Feel free to use any additional libraries you may need. README should contain details on how to install, run and test your code.
 
 Good luck!
