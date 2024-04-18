@@ -47,7 +47,7 @@ GET /goal:
 
 These goals should be stored in the `GOAL_STORE` dictionary.
 
-We have provided you with a basic set up, which uses [Poetry](https://python-poetry.org/) to manage dependencies, and which uses [Flask](https://flask.palletsprojects.com/) to run the web server and [pytest](https://docs.pytest.org/) to run any tests. We suggest you build off this base. You can run the server in development mode using `poetry run start` and you can run all the tests using `poetry run pytest .`.
+We have provided you with a basic set up, which uses [Poetry](https://python-poetry.org/) to manage dependencies, and which uses [Flask](https://flask.palletsprojects.com/) to run the web server and [pytest](https://docs.pytest.org/) to run any tests. We suggest you build off this base. You can run the server in development mode using `poetry run flask run` and you can run all the tests using `poetry run pytest .`.
 
 ## API spec
 
