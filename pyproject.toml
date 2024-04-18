@@ -7,9 +7,7 @@ authors = ["Michael Curtis <mike@multiply.ai>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 Flask = "^2.1.2"
-
-[tool.poetry.scripts]
-start = "scripts:start"
+python-dotenv = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
@@ -17,3 +15,8 @@ pytest = "^7.1.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]

@@ -3,10 +3,7 @@ from pathlib import Path
 import pytest
 
 
-sys.path.insert(0, str(Path(__file__).parent.parent / 'multiply_backend_coding_task'))
-
-
-from main import app
+from multiply_backend_coding_task.api import app
 
 
 @pytest.fixture(scope='session')
